@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/*CSS Document */
+
+#body_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display:  flex;
+    flex-direction: column;
+}
+
+header {
+    height: 10vh;
+    width: 100%;
+}
+
+#banner {
+    height: 90vh;
+    width: 100%;
+    background-color: white;
+}
+
+#graphic {
+    width: 100%;
+    height: 90vh;
+    opacity: 0.9;
+}
+
+
+#button {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: black;
+    opacity: 0.9;
+    border-radius: 3em
+}
+
+#arrow_down {
+    height: 100px;
+    border-radius: 3em
+}
+
+
+#links {
+    height: 20vh;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+#preikestolen, #kjeragbolten, #sola, #wioska {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #2b2b2b 1px;
+}
+
+#bgP, #bgK, #bgS, #bgW {
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+#bgP:hover, #bgK:hover, #bgS:hover, #bgW:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#linkContentP, #linkContentK, #linkContentS, #linkContentW {
+    position: relative;
+    font-weight: bolder;
+    font-size: 22px;
+    font-family:Verdana, Tahoma, sans-serif;
+}
+
+#linkContentP:hover, #linkContentK:hover, #linkContentS:hover, #linkContentW:hover{
+    cursor: pointer;
+}
+
+#map{
+    height: 80vh;
+    width: 100%;
+}
+#text {
+    height: 40vh;
+    width: 100%;
+    background-color: yellow;
+}
+#mapDiv{
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    height: 20vh;
+    width: 100%;
+}
