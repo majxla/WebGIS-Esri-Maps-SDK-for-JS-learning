@@ -157,8 +157,10 @@ require([
         position: "bottom-left"
     });
 
-    const layerList = new LayerList({
-        view: view,
+    const layerList = new Expand({
+        content: new LayerList({
+            view: view,
+        })
     });
 
     view.ui.add(layerList, {
@@ -176,13 +178,13 @@ require([
     });
 
 
-    // const measurement = new Expand({
-    //     content: new Measurement({
-    //         view: view,
-    //         activeTool: "distance"
-    //       })
-    // })
-    // view.ui.add(measurement, "bottom-right");
+    const measurement = new Expand({
+        content: new Measurement({
+            view: view,
+            activeTool: "distance"
+          })
+    })
+    view.ui.add(measurement, "bottom-right");
 
     
     // zooming to selected places

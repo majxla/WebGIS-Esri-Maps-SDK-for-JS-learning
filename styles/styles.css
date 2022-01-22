@@ -95,14 +95,25 @@ header {
 #text {
     height: 40vh;
     width: 100%;
-    background-color: yellow;
+    background-color: #eeeeee;
 }
+
+#text-content {
+    padding: 3vh 3vw;
+    text-align: justify;
+}
+
+
 #mapDiv{
     height: 100%;
     width: 100%;
 }
 
 footer {
+    background-color: #f3f3f3;
     height: 20vh;
     width: 100%;
+    font-size: 12px;
+    text-align: center;
+    border-top: solid 1px #e6e6e6;
 }
