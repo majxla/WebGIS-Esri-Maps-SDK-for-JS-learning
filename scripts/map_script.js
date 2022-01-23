@@ -33,9 +33,9 @@ require([
     'esri/layers/GeoJSONLayer',
     'esri/widgets/Legend',
     'esri/widgets/LayerList',
-    'esri/widgets/Measurement',
+    'esri/widgets/DistanceMeasurement2D',
     'esri/widgets/Search'
-], (Map, MapView, Button, FeatureLayer, Graphic, GraphicsLayer, BasemapGallery, Expand, SimpleMarkerSymbol, SimpleRenderer, PopupTemplate, GeoJSONLayer, Legend, LayerList, Measurement, Search) => {
+], (Map, MapView, Button, FeatureLayer, Graphic, GraphicsLayer, BasemapGallery, Expand, SimpleMarkerSymbol, SimpleRenderer, PopupTemplate, GeoJSONLayer, Legend, LayerList, DistanceMeasurement2D, Search) => {
 
     const map1 = new Map({
         basemap: "osm"
@@ -179,9 +179,8 @@ require([
 
 
     const measurement = new Expand({
-        content: new Measurement({
-            view: view,
-            activeTool: "distance"
+        content: new DistanceMeasurement2D({
+            view: view
           })
     })
     view.ui.add(measurement, "bottom-right");
